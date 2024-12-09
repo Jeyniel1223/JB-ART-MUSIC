@@ -4,47 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JB Arte Música</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #333;
-            color: white;
-            padding: 1em;
-        }
-        section {
-            padding: 20px;
-        }
-        .gallery img {
-            max-width: 200px;
-            margin: 10px;
-        }
-        .qr-section img {
-            max-width: 300px;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
+    <header class="hero">
         <h1>Bienvenidos a JB Arte Música</h1>
         <p>Arte y música al alcance de tus manos</p>
     </header>
-    <section class="gallery">
-        <h2>Galería de Arte</h2>
-        <!-- Reemplaza las rutas de las imágenes con tus propias imágenes subidas -->
-        <img src="imagen1.jpg" alt="Imagen de arte 1">
-        <img src="imagen2.jpg" alt="Imagen de arte 2">
-        <img src="imagen3.jpg" alt="Imagen de arte 3">
-    </section>
-    <section class="qr-section">
-        <h2>Paga con QR</h2>
-        <!-- Cambia el nombre de archivo al de tu QR si es diferente -->
-        <img src="pp_p2p_my_qrcode_1733623565660.jpg" alt="Código QR de pago">
-    </section>
+    <main>
+        <section class="gallery">
+            <h2>Galería de Arte</h2>
+            <div class="images">
+                <div class="image-card">Imagen de arte 1</div>
+                <div class="image-card">Imagen de arte 2</div>
+                <div class="image-card">Imagen de arte 3</div>
+            </div>
+        </section>
+        <section class="payment">
+            <h2>Paga con QR</h2>
+            <div class="qr-container">
+                <img src="pp_p2p_my_qrcode_173362.png" alt="QR para pagar" class="qr-image">
+                <p>Escanea para pagar a <strong>Pascual Cruz</strong></p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 JB Arte Música - Todos los derechos reservados</p>
+    </footer>
 </body>
 </html>
+
 
